@@ -1,6 +1,9 @@
 exports.config = {
+  namespace: 'onfire',
+  generateDistribution: true,
+  generateWWW: false,
   bundles: [
-    { components: ['my-name'] }
+    { components: ['on-fire'] }
   ],
   collections: [
     { name: '@stencil/router' }
@@ -11,3 +14,6 @@ exports.devServer = {
   root: 'www',
   watchGlob: '**/**'
 }
+
+
+

@@ -6,31 +6,32 @@
 
 import '@stencil/router';
 
-import { MyName as MyName } from './components/my-name/my-name';
+import { OnFire as OnFire } from './components/on-fire/on-fire';
 
-interface HTMLMyNameElement extends MyName, HTMLElement {
+interface HTMLOnFireElement extends OnFire, HTMLElement {
 }
-declare var HTMLMyNameElement: {
-  prototype: HTMLMyNameElement;
-  new (): HTMLMyNameElement;
+declare var HTMLOnFireElement: {
+  prototype: HTMLOnFireElement;
+  new (): HTMLOnFireElement;
 };
 declare global {
   interface HTMLElementTagNameMap {
-      "my-name": HTMLMyNameElement;
+      "on-fire": HTMLOnFireElement;
   }
   interface ElementTagNameMap {
-      "my-name": HTMLMyNameElement;
+      "on-fire": HTMLOnFireElement;
   }
   namespace JSX {
       interface IntrinsicElements {
-          "my-name": JSXElements.MyNameAttributes;
+          "on-fire": JSXElements.OnFireAttributes;
       }
   }
   namespace JSXElements {
-      export interface MyNameAttributes extends HTMLAttributes {
+      export interface OnFireAttributes extends HTMLAttributes {
         
           first?: any,
-          last?: any
+          last?: any,
+          message?: any
       }
   }
 }
