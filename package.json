@@ -1,7 +1,7 @@
 {
   "name": "on-fire-component",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Testing StencilJS",
   "files": [
     "dist/"
