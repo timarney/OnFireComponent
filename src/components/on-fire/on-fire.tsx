@@ -1,26 +1,24 @@
-import { Component, Prop } from '@stencil/core';
-
+import { Component, Prop } from "@stencil/core";
 
 @Component({
-  tag: 'on-fire',
-  styleUrl: 'on-fire.scss'
+  tag: "on-fire",
+  styleUrl: "on-fire.scss"
 })
 export class OnFire {
-
-  @Prop() first: string;
-
-  @Prop() last: string;
-
+  @Prop() animated: boolean;
   @Prop() message: string;
 
   render() {
+    let className = "font-effect-fire";
+
+    if (this.animated) {
+      className = "font-effect-fire-animation";
+    }
+
     return (
-      <div class="font-effect-fire-animation">
-        {this.message} {this.first} {this.last} 🔥
+      <div class={`${className}`}>
+        {this.message}
       </div>
     );
   }
 }
-
-
-

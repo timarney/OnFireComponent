@@ -1,1 +1,4 @@
-# https://github.com/timarney/OnFireComponent.git
+# OnFire
+
+Testing StencilJS
+https://codepen.io/Arney/pen/EwvqJx

@@ -29,8 +29,7 @@ declare global {
   namespace JSXElements {
       export interface OnFireAttributes extends HTMLAttributes {
         
-          first?: any,
-          last?: any,
+          animated?: boolean | "true" | "false",
           message?: any
       }
   }
